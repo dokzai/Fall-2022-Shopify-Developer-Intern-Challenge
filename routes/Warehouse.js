@@ -45,7 +45,6 @@ router.post('/', (req, res, next) => {
     });
     warehouse.save()
         .then(result => {
-            //console.log(result);
             res.status(201).json({
                 message: "Successfully created warehouse!",
                 createdItem: result

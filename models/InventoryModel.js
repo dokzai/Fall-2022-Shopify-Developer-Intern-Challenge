@@ -14,12 +14,10 @@ let inventorySchema = Schema({
   },
   status: {
     type: String,
-    required: true,
     default: "received",
   },
   warehouseID: {
     type: String,
-    required: true,
     default: null,
   },
   pricePerUnit: {

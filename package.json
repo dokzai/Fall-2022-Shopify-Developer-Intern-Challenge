@@ -2,9 +2,9 @@
   "name": "fall-2022-shopify-developer-intern-challenge",
   "version": "1.0.0",
   "description": "Fall 2022 Shopify Developer Intern Challenge",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest",
     "dev": "nodemon server -e js,mjs,json,pug"
   },
   "repository": {

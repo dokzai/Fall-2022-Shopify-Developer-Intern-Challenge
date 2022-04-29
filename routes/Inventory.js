@@ -62,7 +62,7 @@ router.post('/', (req, res, next) => {
             $near: {
                 $geometry: {
                     type: "Point",
-                    coordinates: [req.body.location.coordinates[0], req.body.location.coordinates[1]]
+                    coordinates: [req.body.originLocation.coordinates[0], req.body.originLocation.coordinates[1]]
                 },
             },
 
@@ -78,7 +78,7 @@ router.post('/', (req, res, next) => {
                 _id: new mongoose.Types.ObjectId(),
                 customerID: req.body.customerID,
                 weight: req.body.weight,
-                status: req.body.status,
+                status: "stored",
                 warehouseID: warehouses[0]._id,
                 pricePerUnit: req.body.pricePerUnit,
                 originAddress: req.body.originAddress,

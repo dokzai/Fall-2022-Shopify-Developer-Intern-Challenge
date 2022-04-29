@@ -9,7 +9,6 @@ let warehouseSchema = Schema({
     required: true,
   },
   location: {
-
     type: {
       type: String,
       default: "Point"
