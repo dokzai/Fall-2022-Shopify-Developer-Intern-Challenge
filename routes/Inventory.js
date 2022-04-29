@@ -71,7 +71,6 @@ router.post("/", (req, res, next) => {
             },
         },
     }).then((warehouses, err) => {
-        console.log(warehouses);
         if (warehouses.length == 0) {
             res.status(406).json({
                 message: "A Warehouse must exist for an inventory item to be sent to",
