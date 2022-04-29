@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "clear_jest": "jest --clearCache",
-    "dev": "nodemon server -e js,mjs,json,pug"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
