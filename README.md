@@ -3,7 +3,9 @@ Hey there 👋! My name is Judy and this is my submission to Shopify's Fall 2022
 
 **So you can skip the setup**: I've left a link to the repl.it demo in my application, where you can feel free to run the automated testing, and play around with the code!
 
-I made an API using Express and Node.js that connected to a MongoDB database. In order to simplify things I also created schemas using Mongoose. **For more details on methods and routes available, skip to this section:** [Using the API](#-using-the-api)
+I made an API using **Express** and **Node.js** that connected to a **MongoDB database**. In order to simplify things I also created schemas using **Mongoose**. 
+
+**For more details on methods and routes available, skip to this section:** _[Using the API](#-using-the-api)_
 
 ## 👩‍💻 Set Up
 
