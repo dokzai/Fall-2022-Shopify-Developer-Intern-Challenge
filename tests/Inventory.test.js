@@ -30,7 +30,7 @@ let warehouse1 = {
     "address": "20 West 15th Street, New York, NY 10011 Flatiron New York New York United States",
     "location": {
         "type": "Point",
-        "coordinates" : [-73.994293, 40.736914]
+        "coordinates": [-73.994293, 40.736914]
     }
 };
 describe("Testing Inventory", () => {
@@ -47,7 +47,6 @@ describe("Testing Inventory", () => {
                 .set('Accept', 'application/json')
                 .send(warehouse1)
                 .expect(201)
-            // add the warehouse
         }
     );
 
@@ -60,10 +59,8 @@ describe("Testing Inventory", () => {
     afterAll(
         async () => {
             await Inventory.deleteMany({})
-            // delete the warehouse
             await Warehouse.deleteMany({})
             await mongoose.disconnect();
-            
         }
     );
 
@@ -243,15 +240,15 @@ describe("Testing Inventory", () => {
                 .send(inventoryItem1)
                 .expect(201)
 
-             await request(app)
-                .put("/inventory/"+item.body.createdItem._id)
+            await request(app)
+                .put("/inventory/" + item.body.createdItem._id)
                 .type("form")
                 .set('Accept', 'application/json')
                 .send(inventoryItem2)
                 .expect(200)
 
             const changedItem = await request(app)
-                .get("/inventory/"+item.body.createdItem._id)
+                .get("/inventory/" + item.body.createdItem._id)
                 .set('Accept', 'application/json')
                 .expect(200)
             expect(changedItem.body).toEqual([{
