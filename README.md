@@ -1,7 +1,7 @@
 # 🛍️ Shopify Fall 2022 Developer Challenge Submission
 Hey there 👋! My name is Judy and this is my submission to Shopify's Fall 2022 Developer Challenge!
 
-**So you can skip the setup**: I've left a link to the repl.it demo in my application, where you can feel free to run the automated testing, and play around with the code! I recommended running `npm run test` to test and see the basic functionality.
+**So you can skip the setup**: I've left a link to the repl.it demo in my application, where you can feel free to run the automated testing, and play around with the code! I recommended running `npm run test` to test and see the basic functionality. **Make sure you have at least ONE warehouse in there before using POST /inventory, etc.**
 
 I made an API using **Express** and **Node.js** that connected to a **MongoDB database**. In order to simplify things I also created schemas using **Mongoose**. 
 
