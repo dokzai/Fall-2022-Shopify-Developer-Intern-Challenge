@@ -1,0 +1,29 @@
+{
+  "name": "fall-2022-shopify-developer-intern-challenge",
+  "version": "1.0.0",
+  "description": "Fall 2022 Shopify Developer Intern Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server -e js,mjs,json,pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dokzai/Fall-2022-Shopify-Developer-Intern-Challenge.git"
+  },
+  "author": "Judy Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dokzai/Fall-2022-Shopify-Developer-Intern-Challenge/issues"
+  },
+  "homepage": "https://github.com/dokzai/Fall-2022-Shopify-Developer-Intern-Challenge#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "geojson": "^0.5.0",
+    "jest": "^28.0.2",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
