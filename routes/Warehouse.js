@@ -62,7 +62,7 @@ router.post('/', (req, res, next) => {
 });
 
 // update warehouse by ID
-router.put('/:warehouseID', () => {
+router.put('/:warehouseID', (req, res, next) => {
     const id = req.params.warehouseID;
     Inventory.findByIdAndUpdate(
         id,
