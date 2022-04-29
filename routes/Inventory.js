@@ -12,7 +12,6 @@ router.get('/', (req, res, next) => {
             })
             .exec()
             .then(docs => {
-                console.log(docs);
                 res.status(200).json(docs);
             })
             .catch(err => {
@@ -25,7 +24,6 @@ router.get('/', (req, res, next) => {
         Inventory.find()
             .exec()
             .then(docs => {
-                console.log(docs);
                 res.status(200).json(docs);
             })
             .catch(err => {
@@ -45,7 +43,6 @@ router.get('/:inventoryID', (req, res, next) => {
         })
         .exec()
         .then(docs => {
-            console.log(docs);
             res.status(200).json(docs);
         })
         .catch(err => {
@@ -113,7 +110,7 @@ router.put('/:inventoryID', (req, res, next) => {
         },
         (err, todo) => {
             if (err) return res.status(500).send(err);
-            return res.status(202).send(todo);
+            return res.status(200).send(todo);
         }
     );
 });
@@ -134,7 +131,7 @@ router.delete('/', (req, res, next) => {
 
 router.delete('/:inventoryID', (req, res, next) => {
     const id = req.params.inventoryID;
-    Inventory.deleteOne({
+    Inventory.findOneAndRemove({
             _id: id
         })
         .exec()

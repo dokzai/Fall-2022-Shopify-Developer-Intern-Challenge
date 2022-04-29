@@ -10,11 +10,12 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
-// print out methods
+/*
 app.use(function (req, res, next) {
   console.log(`${req.method} for ${req.url}`);
   next();
 });
+*/
 
 app.use("/inventory", inventoryRoutes);
 app.use("/warehouse", warehouseRoutes);

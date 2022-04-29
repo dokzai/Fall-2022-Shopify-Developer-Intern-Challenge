@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "clear_jest": "jest --clearCache",
     "dev": "nodemon server -e js,mjs,json,pug"
   },
   "repository": {
