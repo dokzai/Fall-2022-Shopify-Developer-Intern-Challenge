@@ -4,7 +4,9 @@ const Inventory = require('../models/InventoryModel');
 const mongoose = require('mongoose');
 const Warehouse = require('../models/WarehouseModel');
 
+// retrieves all inventory items
 router.get('/', (req, res, next) => {
+    // checks if querying by warehouseID
     if (req.query.warehouseID) {
         const warehouseIDQuery = req.query.warehouseID;
         Inventory.find({
@@ -36,6 +38,7 @@ router.get('/', (req, res, next) => {
 
 });
 
+// retrieves specific inventory based on ID
 router.get('/:inventoryID', (req, res, next) => {
     const id = req.params.inventoryID;
     Inventory.find({
@@ -53,7 +56,9 @@ router.get('/:inventoryID', (req, res, next) => {
         });
 });
 
+// creates a new inventory item
 router.post('/', (req, res, next) => {
+    // finds a warehouse to put the item
     Warehouse.find({
         location: {
             $near: {
@@ -71,6 +76,7 @@ router.post('/', (req, res, next) => {
                 error: err
             });
         } else {
+            // creates and 'stores' the new inventory item
             const item = new Inventory({
                 _id: new mongoose.Types.ObjectId(),
                 customerID: req.body.customerID,
@@ -101,6 +107,7 @@ router.post('/', (req, res, next) => {
     })
 });
 
+// updates inventory item
 router.put('/:inventoryID', (req, res, next) => {
     const id = req.params.inventoryID;
     Inventory.findByIdAndUpdate(
@@ -115,6 +122,7 @@ router.put('/:inventoryID', (req, res, next) => {
     );
 });
 
+// deletes all inventory items
 router.delete('/', (req, res, next) => {
     Inventory.deleteMany({})
         .exec()
@@ -129,6 +137,7 @@ router.delete('/', (req, res, next) => {
         });
 });
 
+// deletes specific inventory item by ID
 router.delete('/:inventoryID', (req, res, next) => {
     const id = req.params.inventoryID;
     Inventory.findOneAndRemove({

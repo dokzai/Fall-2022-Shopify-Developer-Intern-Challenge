@@ -3,6 +3,7 @@ const router = express.Router();
 const Warehouse = require('../models/WarehouseModel');
 const mongoose = require('mongoose');
 
+// retrieve all warehouses
 router.get('/', (req, res, next) => {
     Warehouse.find()
         .exec()
@@ -17,6 +18,7 @@ router.get('/', (req, res, next) => {
         });
 });
 
+// retrieve warehouse by ID
 router.get('/:warehouseID', (req, res, next) => {
     const id = req.params.warehouseID;
     Warehouse.find({
@@ -34,6 +36,7 @@ router.get('/:warehouseID', (req, res, next) => {
         });
 });
 
+// create new warehouse
 router.post('/', (req, res, next) => {
     const warehouse = new Warehouse({
         _id: new mongoose.Types.ObjectId(),
@@ -58,6 +61,7 @@ router.post('/', (req, res, next) => {
         });
 });
 
+// update warehouse by ID
 router.put('/:warehouseID', () => {
     const id = req.params.warehouseID;
     Inventory.findByIdAndUpdate(
