@@ -59,4 +59,4 @@ I made basic tests using jest and supertest, to run it use:
 Since I have never used jest and supertest before I had to learn and watch YouTube videos in order to learn how to use it. I also learnt about GeoJSON data and how it can be used to query for locations near or in proximity to a longitude and lattidude!
 
 ## 😄 Next Steps
-I think that with usage of GeoJSON points I can probably add a lot more features for querying to my MVP. Overall I had a lot of fun learning new technologies and I'm excited to apply this to other projects I make soon in the future!
+I think that with usage of GeoJSON points I can probably add a lot more features for querying to my MVP (minimum viable product). Overall I had a lot of fun learning new technologies and I'm excited to apply this to other projects I make soon in the future!
