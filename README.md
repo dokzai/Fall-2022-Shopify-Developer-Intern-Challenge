@@ -1,11 +1,27 @@
-# Fall-2022-Shopify-Developer-Intern-Challenge
+# Welcome
+Hi! I made an API using Mongoose, Express, and Node.js for a basic server. More details on teh API are int he section here
+
+I've left a link to the repl.it demo in my application!
+
+# Set Up
+- First make sure to install Node
+- Download or clone this repo
+
+# Design
 throw an er diagram
 talk about systems design
 
-methods available
+# Using the API
+- GET
+- GET
+- POST
+- POST
 
-actual env key available on the replit submission
-how to create a thing for the mongodb
+# Testing
+Since we 
 
-stuff for the future
-stuff i learnt
+# Stuff I learnt
+I learnt how to test
+
+# Next Steps
+Since this was just a 
