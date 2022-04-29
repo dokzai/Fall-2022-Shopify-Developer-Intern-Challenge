@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const GeoJSON  = require('geojson');
+const GeoJSON = require('geojson');
 const Schema = mongoose.Schema;
 
 let inventorySchema = Schema({
@@ -19,18 +19,19 @@ let inventorySchema = Schema({
   },
   warehouseID: {
     type: String,
-    required: true
+    required: true,
+    default: null,
   },
   pricePerUnit: {
     type: Number,
     required: true,
     default: 0.0,
   },
-  address: {
+  originAddress: {
     type: String,
     required: true,
   },
-  location: {
+  originLocation: {
     type: {
       type: String,
       default: "Point"
@@ -42,7 +43,9 @@ let inventorySchema = Schema({
   }
 });
 
-inventorySchema.index({'location': '2dsphere'});
+inventorySchema.index({
+  'location': '2dsphere'
+});
 
 const Inventory = mongoose.model("Inventory", inventorySchema);
 module.exports = Inventory;
