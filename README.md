@@ -40,7 +40,7 @@ PORT=3000
 | GET     | /inventory |Returns all inventory items|
 | GET      | /inventory:inventoryID      |Returns inventory item by ID|
 | GET | /inventory?warehouseID      | Returns inventory items by warehouse ID|
-| POST | /inventory     |Creates an inventory item |
+| POST | /inventory     |Creates an inventory item + assigns to closest warehouse |
 | PUT | /inventory:inventoryID   |Update an inventory item by ID|
 | DELETE | /inventory      |Removes all inventory items|
 | DELETE | /inventory:inventoryID      |Removes inventory item by ID|
@@ -56,6 +56,11 @@ PORT=3000
 ## 🤖 Automated Testing
 I made basic tests using jest and supertest, to run it use:
 `npm run test`
+
+## 🎨 Design Decisions
+Put an ER diagram picture here
+Since I attempted the second feature "Ability to create warehouses/locations and assign inventory to specific locations", I made it so that the inventory once created gets automatically assigned and 'stored' into a warehouse with information on it's origin location. It's 'current location' (which warehouse it is in) can be 'edited' via a PUT to change the ID of what warehouse it is in.
+
 
 ## 📚 Stuff I Learnt
 Since I have never used jest and supertest before I had to learn and watch YouTube videos in order to learn how to use it. I also learnt about GeoJSON data and how it can be used to query for locations near or in proximity to a longitude and lattidude!
