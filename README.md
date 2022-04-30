@@ -1,7 +1,7 @@
 # 🛍️ Shopify Fall 2022 Developer Challenge Submission
 Hey there 👋! My name is Judy and this is my submission to Shopify's Fall 2022 Developer Challenge!
 
-**So you can skip the setup**: I've left a link to the repl.it demo in my application! Just click the Run button and it should start up the link which can be used to test using Postman (feel free to copy the testing objects from the test folder, or take a look at sampleData.json). **Created inventory items gets automatically assigned to a warehouse, if there is no warehouse available it will not create the item**
+**So you can skip the setup**: I've left a link to the repl.it demo in my application! Just click the Run button (which `calls npm run start`) and it should start up the link which can be used to test using Postman (feel free to copy the testing objects from the test folder, or take a look at sampleData.json). **Created inventory items gets automatically assigned to a warehouse, if there is no warehouse available it will not create the item**
 
 **I recommended** running `npm run test` to test and see the basic functionality. I'm not sure if Repl.it allows for you to use the shell, but you can test it out locally by following the _[Set up](#-set-up)_ below
 
