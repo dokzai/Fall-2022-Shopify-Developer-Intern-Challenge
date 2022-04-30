@@ -1,0 +1,37 @@
+{
+    "sampleInventoryItems": [
+        
+        {
+            "customerID": "1",
+            "weight": 1.0,
+            "pricePerUnit": 1,
+            "originAddress": "2 East 24th Street, New York, NY 10010 Flatiron New York New York United States",
+            "originLocation": {
+                "type": "Point",
+                "coordinates": [-73.987123, 40.741459]
+            }
+        },
+
+        {
+            "customerID": "2",
+            "weight": 18,
+            "pricePerUnit": 1,
+            "originAddress": "216 West 18th Street, New York, NY 10011 Chelsea New York New York United States",
+            "originLocation": {
+                "type": "Point",
+                "coordinates": [-73.999025, 40.741408]
+            }
+        }
+    ],
+
+    "sampleWarehouse": 
+
+    {
+        "address": "20 West 15th Street, New York, NY 10011 Flatiron New York New York United States",
+        "location": {
+            "type": "Point",
+            "coordinates": [-73.994293, 40.736914]
+        }
+    }
+
+}
