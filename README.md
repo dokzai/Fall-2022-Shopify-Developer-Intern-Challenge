@@ -60,7 +60,7 @@ I made basic tests using jest and supertest, to run it use:
 `npm run test`
 
 ## 🎨 Design Decisions
-![figure drawio](https://user-images.githubusercontent.com/38355190/166076927-db035727-3dec-4fdd-8255-31f16e56a1a1.png)
+![figure](https://user-images.githubusercontent.com/38355190/166088930-587d0ad9-08cd-4a67-9569-9bc612a79c3c.png)
 
 _Very quick diagram attempt at showing what the general idea/schema is_
 
