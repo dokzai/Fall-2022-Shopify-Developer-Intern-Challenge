@@ -62,7 +62,7 @@ I made basic tests using jest and supertest, to run it use:
 ## 🎨 Design Decisions
 ![figure drawio](https://user-images.githubusercontent.com/38355190/166076927-db035727-3dec-4fdd-8255-31f16e56a1a1.png)
 
-_Very quick diagram attempt at showing what the general idea/schema_
+_Very quick diagram attempt at showing what the general idea/schema is_
 
 Since I attempted the second feature "Ability to create warehouses/locations and assign inventory to specific locations", I made it so that the inventory once created gets automatically assigned and 'stored' into a warehouse with information on it's origin location. It's 'current location' (which warehouse it is in) can be 'edited' via a PUT to change the ID of what warehouse it is in.
 
