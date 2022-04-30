@@ -1,7 +1,9 @@
 # 🛍️ Shopify Fall 2022 Developer Challenge Submission
 Hey there 👋! My name is Judy and this is my submission to Shopify's Fall 2022 Developer Challenge!
 
-**So you can skip the setup**: I've left a link to the repl.it demo in my application, where you can feel free to run the automated testing, or use postman! I recommended running `npm run test` to test and see the basic functionality. Just click the Run button (looks like a play symbol) and it should start up the link to the server which can be used to test (feel free to copy the testing objects from the test folder). **Created inventory items gets automatically assigned to a warehouse, if there is no warehouse available it will not create the item**
+**So you can skip the setup**: I've left a link to the repl.it demo in my application! Just click the Run button and it should start up the link which can be used to test using Postman (feel free to copy the testing objects from the test folder). **Created inventory items gets automatically assigned to a warehouse, if there is no warehouse available it will not create the item**
+
+**I recommended** running `npm run test` to test and see the basic functionality. I'm not sure if Repl.it allows for you to use the console, but you can test it out locally by following the _[Set up](#-set-up)_ below
 
 I made an API using **Express** and **Node.js** that connected to a **MongoDB database**. In order to simplify things I also created schemas using **Mongoose**. 
 
